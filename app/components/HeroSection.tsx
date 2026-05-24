@@ -2,7 +2,7 @@ import DownloadSection from "./DownloadSection";
 
 export default function HeroSection() {
   return (
-    <section className="relative flex flex-col items-center justify-center px-6 pt-40 pb-28 text-center overflow-hidden">
+    <section className="relative flex flex-col items-center justify-center px-6 pt-32 pb-24 text-center overflow-hidden w-full">
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
         <div className="h-150 w-150 rounded-full bg-amber-400/5 blur-3xl" />
       </div>
@@ -18,11 +18,11 @@ export default function HeroSection() {
         </div>
 
         <h1
-          className="text-5xl  tracking-tight text-white sm:text-6xl lg:text-7xl"
+          className="text-4xl tracking-tight text-white sm:text-5xl lg:text-6xl"
           style={{ fontFamily: "var(--font-silkscreen)" }}
         >
           Your AI agent.{" "}
-          <span className="bg-linear-to-r from-amber-300 to-amber-500 bg-clip-text text-transparent whitespace-nowrap">
+          <span className="bg-linear-to-r from-amber-300 to-amber-500 bg-clip-text text-transparent">
             Always improving.
           </span>
         </h1>

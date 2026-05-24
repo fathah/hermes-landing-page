@@ -60,14 +60,14 @@ const OS_LOGOS: Record<Exclude<OS, "unknown">, { src: string; alt: string }> = {
   linux: { src: "/logos/linux.svg", alt: "Linux" },
 };
 
-const LINUX_DISTRO_LOGOS: Record<string, { src: string; alt: string }> = {
-  "Linux (Debian)": { src: "/logos/debian.svg", alt: "Debian" },
-  "Linux (Fedora)": { src: "/logos/fedora.svg", alt: "Fedora" },
-  "Linux (AppImage)": { src: "/logos/linux.svg", alt: "Linux" },
-  "macOS (Apple Silicon)": { src: "/logos/apple.svg", alt: "Apple" },
-  "macOS (Intel)": { src: "/logos/apple.svg", alt: "Apple" },
-  "Windows (Setup)": { src: "/logos/windows.svg", alt: "Windows" },
-  "Windows (Portable)": { src: "/logos/windows.svg", alt: "Windows" },
+const LABEL_LOGOS: Record<string, { src: string; alt: string }> = {
+  "Apple Silicon": { src: "/logos/apple.svg", alt: "Apple" },
+  "Intel Mac": { src: "/logos/apple.svg", alt: "Apple" },
+  Windows: { src: "/logos/windows.svg", alt: "Windows" },
+  "Windows Portable": { src: "/logos/windows.svg", alt: "Windows" },
+  Linux: { src: "/logos/linux.svg", alt: "Linux" },
+  Debian: { src: "/logos/debian.svg", alt: "Debian" },
+  Fedora: { src: "/logos/fedora.svg", alt: "Fedora" },
 };
 
 function OSIcon({
@@ -80,7 +80,7 @@ function OSIcon({
   className?: string;
 }) {
   if (os === "unknown") return null;
-  const logo = (label && LINUX_DISTRO_LOGOS[label]) ?? OS_LOGOS[os];
+  const logo = (label && LABEL_LOGOS[label]) ?? OS_LOGOS[os];
   if (!logo) return null;
   return (
     <Image
@@ -134,9 +134,9 @@ export default function DownloadButtons({
   const primaryOptions =
     os === "mac" && macArch
       ? allForOS.filter((d) =>
-          d.label
-            .toLowerCase()
-            .includes(macArch === "arm64" ? "silicon" : "intel"),
+          macArch === "arm64"
+            ? d.label === "Apple Silicon"
+            : d.label === "Intel Mac",
         )
       : allForOS;
 

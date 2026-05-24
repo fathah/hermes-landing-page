@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import Tilt from "react-parallax-tilt";
 import { SCREENS } from "../data/content";
 
 export default function ScreensSection() {
@@ -22,26 +25,34 @@ export default function ScreensSection() {
                 key={s.label}
                 className={`flex flex-col gap-10 items-center md:flex-row ${isEven ? "" : "md:flex-row-reverse"}`}
               >
-                <div
-                  className="w-full md:w-3/5 rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900/60 shadow-xl shadow-black/30 transition-transform duration-500 hover:transform-[perspective(1200px)_rotateY(0deg)]"
-                  style={{
-                    transform: `perspective(1500px) rotateY(${isEven ? "10deg" : "-10deg"})`,
-                  }}
+                <Tilt
+                  className="w-full md:w-3/5"
+                  tiltMaxAngleX={6}
+                  tiltMaxAngleY={8}
+                  perspective={1200}
+                  scale={1.02}
+                  transitionSpeed={600}
+                  glareEnable={true}
+                  glareMaxOpacity={0.08}
+                  glareColor="#fbbf24"
+                  glarePosition="all"
                 >
-                  {s.preview ? (
-                    <Image
-                      src={s.preview}
-                      alt={`Hermes ${s.label} screen`}
-                      width={900}
-                      height={560}
-                      className="w-full object-cover object-top"
-                    />
-                  ) : (
-                    <div className="flex items-center justify-center h-56 text-zinc-700 text-sm">
-                      No preview
-                    </div>
-                  )}
-                </div>
+                  <div className="rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900/60 shadow-xl shadow-black/30">
+                    {s.preview ? (
+                      <Image
+                        src={s.preview}
+                        alt={`Hermes ${s.label} screen`}
+                        width={900}
+                        height={560}
+                        className="w-full object-cover object-top"
+                      />
+                    ) : (
+                      <div className="flex items-center justify-center h-56 text-zinc-700 text-sm">
+                        No preview
+                      </div>
+                    )}
+                  </div>
+                </Tilt>
                 <div
                   className={`w-full md:w-2/5 flex flex-col gap-4 ${isEven ? "md:pl-4" : "md:pr-4"}`}
                 >
