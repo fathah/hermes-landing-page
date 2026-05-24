@@ -30,8 +30,7 @@ export default function HeroSection() {
         <p className="max-w-xl text-lg text-zinc-400 leading-relaxed">
           The only agent with a built-in learning loop. It creates skills from
           experience, improves them during use, and builds a deepening model of
-          who you are across sessions. Talk to it from Telegram while it works
-          on a cloud VM.
+          who you are across sessions.
         </p>
         <p className="max-w-xl text-sm text-zinc-600 leading-relaxed">
           A community-maintained desktop companion for{" "}
