@@ -2,11 +2,14 @@ const REPO = "fathah/hermes-desktop";
 
 export const RELEASES_URL = `https://github.com/${REPO}/releases`;
 
-export async function getLatestRelease(): Promise<{ version: string; tag: string }> {
+export async function getLatestRelease(): Promise<{
+  version: string;
+  tag: string;
+}> {
   try {
     const res = await fetch(
       `https://api.github.com/repos/${REPO}/releases/latest`,
-      { next: { revalidate: 3600 } },
+      { cache: "no-store" },
     );
     if (!res.ok) throw new Error("fetch failed");
     const data = await res.json();
@@ -23,12 +26,47 @@ export function buildDownloadOptions(version: string, tag: string) {
   const v = version;
 
   return [
-    { os: "mac" as const, label: "macOS (Apple Silicon)", url: `${base}/hermes-desktop-${v}-arm64.dmg`, ext: ".dmg" },
-    { os: "mac" as const, label: "macOS (Intel)", url: `${base}/hermes-desktop-${v}-x64.dmg`, ext: ".dmg" },
-    { os: "windows" as const, label: "Windows (Setup)", url: `${base}/hermes-desktop-${v}-setup.exe`, ext: ".exe" },
-    { os: "windows" as const, label: "Windows (Portable)", url: `${base}/hermes-desktop-${v}-portable.exe`, ext: ".exe" },
-    { os: "linux" as const, label: "Linux (AppImage)", url: `${base}/hermes-desktop-${v}.AppImage`, ext: ".AppImage" },
-    { os: "linux" as const, label: "Linux (Debian)", url: `${base}/hermes-desktop_${v}_amd64.deb`, ext: ".deb" },
-    { os: "linux" as const, label: "Linux (Fedora)", url: `${base}/hermes-desktop-${v}.rpm`, ext: ".rpm" },
+    {
+      os: "mac" as const,
+      label: "macOS (Apple Silicon)",
+      url: `${base}/hermes-desktop-${v}-arm64.dmg`,
+      ext: ".dmg",
+    },
+    {
+      os: "mac" as const,
+      label: "macOS (Intel)",
+      url: `${base}/hermes-desktop-${v}-x64.dmg`,
+      ext: ".dmg",
+    },
+    {
+      os: "windows" as const,
+      label: "Windows (Setup)",
+      url: `${base}/hermes-desktop-${v}-setup.exe`,
+      ext: ".exe",
+    },
+    {
+      os: "windows" as const,
+      label: "Windows (Portable)",
+      url: `${base}/hermes-desktop-${v}-portable.exe`,
+      ext: ".exe",
+    },
+    {
+      os: "linux" as const,
+      label: "Linux (AppImage)",
+      url: `${base}/hermes-desktop-${v}.AppImage`,
+      ext: ".AppImage",
+    },
+    {
+      os: "linux" as const,
+      label: "Linux (Debian)",
+      url: `${base}/hermes-desktop_${v}_amd64.deb`,
+      ext: ".deb",
+    },
+    {
+      os: "linux" as const,
+      label: "Linux (Fedora)",
+      url: `${base}/hermes-desktop-${v}.rpm`,
+      ext: ".rpm",
+    },
   ];
 }
