@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, DM_Mono } from "next/font/google";
+import { Plus_Jakarta_Sans, DM_Mono, Silkscreen } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
@@ -15,8 +15,14 @@ const dmMono = DM_Mono({
   weight: ["400", "500"],
 });
 
+const silkscreen = Silkscreen({
+  variable: "--font-silkscreen",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
 export const metadata: Metadata = {
-  title: "Hermes — Self-Improving AI Agent Desktop",
+  title: "Hermes Desktop - Your AI Agent, Always Improving",
   description:
     "Hermes is a self-improving AI assistant with tool use, multi-platform messaging, and a closed learning loop. Available for macOS, Windows, and Linux.",
 };
@@ -29,7 +35,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${plusJakartaSans.variable} ${dmMono.variable} h-full antialiased`}
+      className={`${plusJakartaSans.variable} ${dmMono.variable} ${silkscreen.variable} h-full antialiased`}
     >
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-V55J8Z2MT2"

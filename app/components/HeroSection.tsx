@@ -1,4 +1,3 @@
-import { RELEASES_URL } from "../data/content";
 import DownloadSection from "./DownloadSection";
 
 export default function HeroSection() {
@@ -15,43 +14,40 @@ export default function HeroSection() {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-amber-400 opacity-75" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-amber-400" />
           </span>
-          Active development · Open source · MIT
+          Community-built · Open source · MIT
         </div>
 
-        <h1 className="text-5xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
-          Your AI agent,{" "}
+        <h1
+          className="text-5xl  tracking-tight text-white sm:text-6xl lg:text-7xl"
+          style={{ fontFamily: "var(--font-silkscreen)" }}
+        >
+          Your AI agent.{" "}
           <span className="bg-linear-to-r from-amber-300 to-amber-500 bg-clip-text text-transparent whitespace-nowrap">
-            self-improving
+            Always improving.
           </span>
         </h1>
 
         <p className="max-w-xl text-lg text-zinc-400 leading-relaxed">
-          The only agent with a built-in learning loop — it creates skills from
+          The only agent with a built-in learning loop. It creates skills from
           experience, improves them during use, and builds a deepening model of
           who you are across sessions. Talk to it from Telegram while it works
-          on a cloud VM.{" "}
+          on a cloud VM.
+        </p>
+        <p className="max-w-xl text-sm text-zinc-600 leading-relaxed">
+          A community-maintained desktop companion for{" "}
           <a
             href="https://github.com/NousResearch/hermes-agent"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-zinc-200 underline underline-offset-2 hover:text-white"
+            className="text-zinc-500 underline underline-offset-2 hover:text-zinc-300"
           >
-            Built by Nous Research.
+            Hermes Agent by Nous Research
           </a>
         </p>
 
         <div id="download" className="w-full mt-4">
           <DownloadSection />
         </div>
-
-        <a
-          href={RELEASES_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors underline underline-offset-2"
-        >
-          View all releases →
-        </a>
       </div>
     </section>
   );

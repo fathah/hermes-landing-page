@@ -10,7 +10,7 @@ export default function ScreensSection() {
             Purpose-built screens
           </h2>
           <p className="mt-4 text-zinc-400 max-w-lg mx-auto">
-            Everything in one place — from first conversation to advanced
+            Everything in one place, from first conversation to advanced
             scheduling and memory.
           </p>
         </div>
