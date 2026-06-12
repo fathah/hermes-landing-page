@@ -25,6 +25,10 @@ export const metadata: Metadata = {
   title: "Hermes Desktop - Your AI Agent, Always Improving",
   description:
     "Hermes is a self-improving AI assistant with tool use, multi-platform messaging, and a closed learning loop. Available for macOS, Windows, and Linux.",
+
+  openGraph: {
+    images: ["https://hermesagents.cc/thumb.png"],
+  },
 };
 
 export default function RootLayout({

@@ -6,18 +6,9 @@ export default function Navbar() {
     <header className="fixed top-0 inset-x-0 z-50 border-b border-zinc-800/60 bg-zinc-950/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <div className="flex items-center gap-2.5">
-          <div className="flex h-7 w-7 items-center justify-center rounded-lg overflow-hidden">
-            <Image
-              src="/icon.svg"
-              alt="Hermes"
-              width={28}
-              height={28}
-              className="w-7 h-7"
-            />
+          <div className="flex  items-center justify-center rounded-lg overflow-hidden">
+            <Image src="/top-logo.svg" alt="Hermes" width={150} height={100} />
           </div>
-          <span className="text-sm font-semibold tracking-tight text-white">
-            Hermes Agent
-          </span>
         </div>
         <nav className="hidden md:flex items-center gap-6 text-sm text-zinc-400">
           <a href="#features" className="hover:text-white transition-colors">
