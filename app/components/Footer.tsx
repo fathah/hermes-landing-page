@@ -3,11 +3,11 @@ import { GITHUB_URL, DOCS_URL, RELEASES_URL } from "../data/content";
 
 const footerLinks = {
   product: [
-    { label: "Features", href: "#features" },
-    { label: "Screens", href: "#screens" },
-    { label: "How It Works", href: "#how-it-works" },
-    { label: "Hermes One Economy", href: "#economy" },
-    { label: "Download", href: "#download" },
+    { label: "Features", href: "#features", external: false },
+    { label: "Screens", href: "#screens", external: false },
+    { label: "How It Works", href: "#how-it-works", external: false },
+    { label: "Hermes One Economy", href: "#economy", external: false },
+    { label: "Download", href: "#download", external: false },
   ],
   resources: [
     { label: "Documentation", href: DOCS_URL, external: true },
