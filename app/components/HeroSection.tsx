@@ -9,14 +9,6 @@ export default function HeroSection() {
       <div className="pointer-events-none absolute top-0 inset-x-0 h-px bg-linear-to-r from-transparent via-white-400/30 to-transparent" />
 
       <div className="relative z-10 flex flex-col items-center gap-6 max-w-3xl">
-        <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-medium text-white">
-          <span className="relative flex h-2 w-2">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75" />
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-white" />
-          </span>
-          Community-built · Open source · MIT
-        </div>
-
         <h1 className="text-4xl tracking-tight text-white sm:text-5xl lg:text-6xl font-bold">
           <span className="opacity-60"> Your AI agent.</span> Always improving.
         </h1>

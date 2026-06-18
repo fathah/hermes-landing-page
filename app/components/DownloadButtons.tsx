@@ -164,6 +164,7 @@ export default function DownloadButtons({
           ))}
         </div>
       )}
+      <p className="text-sm   text-white/80 tracking-wide">1M+ downloads</p>
 
       {/* Other platforms */}
       <div className="flex flex-col items-center gap-3">

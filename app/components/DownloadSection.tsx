@@ -36,10 +36,12 @@ export default function DownloadSection() {
   }
 
   return (
-    <DownloadButtons
-      options={options}
-      releasesUrl={RELEASES_URL}
-      version={version}
-    />
+    <div className="flex flex-col items-center gap-6 w-full">
+      <DownloadButtons
+        options={options}
+        releasesUrl={RELEASES_URL}
+        version={version}
+      />
+    </div>
   );
 }
