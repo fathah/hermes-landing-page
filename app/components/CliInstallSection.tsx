@@ -105,7 +105,7 @@ export default function CliInstallSection() {
           </div>
         </div>
         <div className="px-4 py-3.5 overflow-x-auto">
-          <code className="text-sm text-amber-300 font-mono whitespace-nowrap">
+          <code className="text-sm text-white font-mono whitespace-nowrap">
             {info.cmd}
           </code>
         </div>

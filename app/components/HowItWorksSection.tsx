@@ -16,7 +16,7 @@ export default function HowItWorksSection() {
             key={item.step}
             className="relative rounded-2xl border border-zinc-800 bg-zinc-900/40 p-7 text-left hover:border-zinc-700 transition-colors"
           >
-            <div className="mb-4 flex h-9 w-9 items-center justify-center rounded-full bg-amber-400/10 text-amber-400 text-sm font-bold">
+            <div className="mb-4 flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white text-sm font-bold">
               {item.step}
             </div>
             <h3 className="mb-2 text-sm font-semibold text-white">

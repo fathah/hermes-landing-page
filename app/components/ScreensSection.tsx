@@ -34,7 +34,7 @@ export default function ScreensSection() {
                   transitionSpeed={600}
                   glareEnable={true}
                   glareMaxOpacity={0.08}
-                  glareColor="#fbbf24"
+                  glareColor="#ffffff"
                   glarePosition="all"
                 >
                   <div className="rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900/60 shadow-xl shadow-black/30">
@@ -57,7 +57,7 @@ export default function ScreensSection() {
                   className={`w-full md:w-2/5 flex flex-col gap-4 ${isEven ? "md:pl-4" : "md:pr-4"}`}
                 >
                   <div className="inline-flex items-center gap-2.5">
-                    <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-amber-400/10 text-amber-400">
+                    <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/10 text-white">
                       {s.icon}
                     </span>
                     <h3 className="text-xl font-semibold text-white">

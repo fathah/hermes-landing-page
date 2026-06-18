@@ -5,12 +5,12 @@ export default function OneEconomySection() {
   return (
     <section className="relative overflow-hidden border-t border-zinc-800/50 py-24">
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-        <div className="h-125 w-125 rounded-full bg-amber-400/5 blur-3xl" />
+        <div className="h-125 w-125 rounded-full bg-white/5 blur-3xl" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-5xl px-6">
         <div className="mb-14 text-center">
-          <span className="inline-block rounded-full bg-amber-400/10 px-4 py-1.5 text-xs font-medium text-amber-400 mb-4">
+          <span className="inline-block rounded-full bg-white/10 px-4 py-1.5 text-xs font-medium text-white mb-4">
             Hermes One Economy
           </span>
           <h2 className="text-3xl font-bold text-white sm:text-4xl">
@@ -26,7 +26,7 @@ export default function OneEconomySection() {
 
         <div className="grid gap-px bg-zinc-800/50 sm:grid-cols-3 rounded-2xl overflow-hidden border border-zinc-800/50">
           <div className="bg-zinc-950 p-8 text-center hover:bg-zinc-900/60 transition-colors">
-            <div className="mb-4 mx-auto inline-flex h-12 w-12 items-center justify-center rounded-xl bg-amber-400/10 text-amber-400">
+            <div className="mb-4 mx-auto inline-flex h-12 w-12 items-center justify-center rounded-xl bg-white/10 text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -50,7 +50,7 @@ export default function OneEconomySection() {
           </div>
 
           <div className="bg-zinc-950 p-8 text-center hover:bg-zinc-900/60 transition-colors">
-            <div className="mb-4 mx-auto inline-flex h-12 w-12 items-center justify-center rounded-xl bg-amber-400/10 text-amber-400">
+            <div className="mb-4 mx-auto inline-flex h-12 w-12 items-center justify-center rounded-xl bg-white/10 text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -76,7 +76,7 @@ export default function OneEconomySection() {
           </div>
 
           <div className="bg-zinc-950 p-8 text-center hover:bg-zinc-900/60 transition-colors">
-            <div className="mb-4 mx-auto inline-flex h-12 w-12 items-center justify-center rounded-xl bg-amber-400/10 text-amber-400">
+            <div className="mb-4 mx-auto inline-flex h-12 w-12 items-center justify-center rounded-xl bg-white/10 text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -103,7 +103,7 @@ export default function OneEconomySection() {
         <div className="mt-10 grid gap-4 sm:grid-cols-2">
           <div className="rounded-xl border border-zinc-800/50 bg-zinc-900/40 p-6 text-center">
             <p className="text-xs text-zinc-500 mb-1">$H1 &middot; In-house</p>
-            <code className="text-sm text-amber-400/90 font-mono break-all select-all">
+            <code className="text-sm text-white/90 font-mono break-all select-all">
               {h1ContractAddress}
             </code>
             <div className="mt-4">
@@ -111,7 +111,7 @@ export default function OneEconomySection() {
                 href="https://bankr.bot/launches/0x4d7e9b6c8db1e12bcba7771729a88b232c86fba3"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-lg bg-amber-400 px-5 py-2.5 text-sm font-semibold text-zinc-950 hover:bg-amber-300 transition-colors"
+                className="inline-flex items-center gap-2 rounded-lg bg-white px-5 py-2.5 text-sm font-semibold text-zinc-950 hover:bg-zinc-100 transition-colors"
               >
                 Buy $H1
                 <svg
@@ -134,7 +134,7 @@ export default function OneEconomySection() {
 
           <div className="rounded-xl border border-zinc-800/50 bg-zinc-900/40 p-6 text-center">
             <p className="text-xs text-zinc-500 mb-1">$HD &middot; Community</p>
-            <code className="text-sm text-amber-400/90 font-mono break-all select-all">
+            <code className="text-sm text-white/90 font-mono break-all select-all">
               {hdContractAddress}
             </code>
             <div className="mt-4">
