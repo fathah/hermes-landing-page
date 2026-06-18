@@ -18,7 +18,7 @@ export default function FeaturesSection() {
             key={f.title}
             className="bg-zinc-950 p-7 hover:bg-zinc-900/60 transition-colors"
           >
-            <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-amber-400/10 text-amber-400">
+            <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-white/10 text-white">
               {f.icon}
             </div>
             <h3 className="mb-2 text-sm font-semibold text-white">{f.title}</h3>

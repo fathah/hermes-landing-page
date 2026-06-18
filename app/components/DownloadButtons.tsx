@@ -153,7 +153,7 @@ export default function DownloadButtons({
               href={opt.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2.5 rounded-xl bg-amber-400 px-7 py-3.5 text-sm font-semibold text-zinc-900 shadow-lg shadow-amber-400/20 transition-all hover:bg-amber-300 hover:shadow-amber-300/30 hover:-translate-y-0.5 active:translate-y-0"
+              className="group inline-flex items-center gap-2.5 rounded-xl bg-white px-7 py-3.5 text-sm font-semibold text-zinc-900 shadow-lg shadow-amber-400/20 transition-all hover:bg-amber-300 hover:shadow-amber-300/30 hover:-translate-y-0.5 active:translate-y-0"
             >
               <OSIcon os={opt.os} label={opt.label} className="brightness-0" />
               Download for {opt.label}
