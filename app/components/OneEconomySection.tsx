@@ -3,7 +3,7 @@ export default function OneEconomySection() {
   const hdContractAddress = "0xfda75f77a22b4f4b783bbbb21915ef64d149bba3";
 
   return (
-    <section className="relative overflow-hidden border-t border-zinc-800/50 py-24">
+    <section id="economy" className="relative overflow-hidden border-t border-zinc-800/50 py-24">
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
         <div className="h-125 w-125 rounded-full bg-white/5 blur-3xl" />
       </div>

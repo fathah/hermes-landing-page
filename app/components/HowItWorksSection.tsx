@@ -2,7 +2,7 @@ import { HOW_IT_WORKS } from "../data/content";
 
 export default function HowItWorksSection() {
   return (
-    <section className="mx-auto max-w-4xl px-6 py-24 text-center">
+    <section id="how-it-works" className="mx-auto max-w-4xl px-6 py-24 text-center">
       <h2 className="mb-4 text-3xl font-bold text-white">
         Up and running in minutes
       </h2>

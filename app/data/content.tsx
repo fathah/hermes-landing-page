@@ -7,7 +7,7 @@ import {
   Clock,
   History,
   Users,
-  Puzzle,
+  Search,
   Cpu,
   Brain,
   Smile,
@@ -95,10 +95,10 @@ export const SCREENS = [
     desc: "Create and manage multiple isolated Hermes profiles, each with its own persona, memory, provider config, and tool settings. Switch between a work agent, a research agent, and a personal assistant without any crossover. Every profile is fully independent, so one agent's memory never leaks into another's.",
   },
   {
-    icon: <Puzzle className="w-4 h-4" />,
-    label: "Skills",
-    preview: "/previews/skills.png",
-    desc: "Hermes automatically creates reusable skills after completing complex tasks and improves them the next time they're used. The Skills screen lets you browse, install, edit, and delete bundled and agent-created skills. Skills are compatible with the agentskills.io open standard, so you can share and import them across agents.",
+    icon: <Search className="w-4 h-4" />,
+    label: "Discover",
+    preview: "/previews/discover.png",
+    desc: "One-click import of skills, MCPs, agents, and more. Browse a curated marketplace of community-built tools and integrations, install them instantly, and extend your agent's capabilities without touching a config file.",
   },
   {
     icon: <Cpu className="w-4 h-4" />,
