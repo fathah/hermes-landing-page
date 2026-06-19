@@ -1,5 +1,7 @@
 "use client";
 
+import toast from "react-hot-toast";
+
 import {
   Zap,
   Users,
@@ -78,7 +80,7 @@ export default function OneEconomySection() {
 
         <div className="mt-10 grid gap-4 sm:grid-cols-1 max-w-lg mx-auto">
           <div className="rounded-xl border border-zinc-800/50 bg-zinc-900/40 p-6 text-center">
-            <p className="text-xs text-zinc-500 mb-1">$HD &middot; Community</p>
+            <p className="text-xs text-zinc-500 mb-1">Contract Address</p>
             <code className="text-sm text-white/90 font-mono break-all select-all">
               {hdContractAddress}
             </code>
@@ -86,6 +88,7 @@ export default function OneEconomySection() {
               <button
                 onClick={() => {
                   navigator.clipboard.writeText(hdContractAddress);
+                  toast.success("Contract address copied!");
                 }}
                 className="inline-flex items-center gap-2 rounded-lg border border-zinc-700 px-5 py-2.5 text-sm font-semibold text-white hover:bg-zinc-800 transition-colors cursor-pointer whitespace-nowrap"
               >

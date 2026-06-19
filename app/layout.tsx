@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, DM_Mono, Silkscreen } from "next/font/google";
 import Script from "next/script";
+import ToastProvider from "./components/ToastProvider";
 import "./globals.css";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -53,7 +54,10 @@ export default function RootLayout({
           gtag('config', 'G-V55J8Z2MT2');
         `}
       </Script>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <ToastProvider />
+        {children}
+      </body>
     </html>
   );
 }
