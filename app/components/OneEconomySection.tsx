@@ -1,12 +1,22 @@
 "use client";
 
-import { Zap, Users, ArrowRightLeft, Copy, ArrowRight, ExternalLink } from "lucide-react";
+import {
+  Zap,
+  Users,
+  ArrowRightLeft,
+  Copy,
+  ArrowRight,
+  ExternalLink,
+} from "lucide-react";
 
 export default function OneEconomySection() {
   const hdContractAddress = "0xfda75f77a22b4f4b783bbbb21915ef64d149bba3";
 
   return (
-    <section id="economy" className="relative overflow-hidden border-t border-zinc-800/50 py-24">
+    <section
+      id="economy"
+      className="relative overflow-hidden border-t border-zinc-800/50 py-24"
+    >
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
         <div className="h-125 w-125 rounded-full bg-white/5 blur-3xl" />
       </div>
@@ -20,10 +30,10 @@ export default function OneEconomySection() {
             The economy that powers autonomous agents.
           </h2>
           <p className="mt-4 text-zinc-400 max-w-2xl mx-auto">
-            Hermes powers its agent ecosystem with a community maintained economy
-            on the Base network, powered by{" "}
-            <strong className="text-white">$HD</strong> - enabling
-            seamless token transactions across all Hermes services.
+            Hermes powers its agent ecosystem with a community maintained
+            economy on the Base network, powered by{" "}
+            <strong className="text-white">$HD</strong> - enabling seamless
+            token transactions across all Hermes services.
           </p>
         </div>
 
@@ -36,8 +46,8 @@ export default function OneEconomySection() {
               Base Network
             </h3>
             <p className="text-sm text-zinc-500 leading-relaxed">
-              Built on Base - Coinbase&apos;s L2 chain - for fast, low-cost, and
-              secure on-chain transactions.
+              Powered by Base, a secure and scalable Ethereum L2 network,
+              providing efficient transactions for agents, creators, and users.
             </p>
           </div>
 
@@ -49,8 +59,8 @@ export default function OneEconomySection() {
               Community Governed
             </h3>
             <p className="text-sm text-zinc-500 leading-relaxed">
-              Decisions are shaped by the community through governance,
-              ensuring a decentralized and transparent economy.
+              Decisions are shaped by the community through governance, ensuring
+              a decentralized and transparent economy.
             </p>
           </div>
 
@@ -74,7 +84,9 @@ export default function OneEconomySection() {
             </code>
             <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
               <button
-                onClick={() => { navigator.clipboard.writeText(hdContractAddress); }}
+                onClick={() => {
+                  navigator.clipboard.writeText(hdContractAddress);
+                }}
                 className="inline-flex items-center gap-2 rounded-lg border border-zinc-700 px-5 py-2.5 text-sm font-semibold text-white hover:bg-zinc-800 transition-colors cursor-pointer whitespace-nowrap"
               >
                 Copy CA
