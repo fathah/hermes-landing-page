@@ -165,11 +165,11 @@ export const HOW_IT_WORKS = [
   {
     step: "2",
     title: "Pick a provider",
-    desc: "One-click setup for Nous Portal (300+ models, no extra keys), OpenRouter, OpenAI, Anthropic, or any local endpoint like Ollama or LM Studio.",
+    desc: "One-click setup for OpenRouter, OpenAI, Anthropic, or any compatible local/remote endpoints.",
   },
   {
     step: "3",
     title: "Your agent is live",
-    desc: "Chat with slash commands, schedule automations, connect Telegram or Discord, and watch your agent create and improve its own skills over time.",
+    desc: "Chat with slash commands, schedule automations, connect Telegram or Discord, and watch your agent create and improve its own skills.",
   },
 ];

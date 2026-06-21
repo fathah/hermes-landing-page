@@ -21,6 +21,21 @@ export async function getLatestRelease(): Promise<{
   }
 }
 
+export async function getStarCount(): Promise<number | null> {
+  try {
+    const res = await fetch(`https://api.github.com/repos/${REPO}`, {
+      cache: "no-store",
+    });
+    if (!res.ok) throw new Error("fetch failed");
+    const data = await res.json();
+    return typeof data.stargazers_count === "number"
+      ? data.stargazers_count
+      : null;
+  } catch {
+    return null;
+  }
+}
+
 export function buildDownloadOptions(version: string, tag: string) {
   const base = `https://github.com/${REPO}/releases/download/${tag}`;
   const v = version;

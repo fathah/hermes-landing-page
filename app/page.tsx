@@ -1,7 +1,6 @@
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import FeaturesSection from "./components/FeaturesSection";
-import ScreensSection from "./components/ScreensSection";
 import HowItWorksSection from "./components/HowItWorksSection";
 import OneEconomySection from "./components/OneEconomySection";
 import CtaSection from "./components/CtaSection";
@@ -13,8 +12,8 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <FeaturesSection />
-      <ScreensSection />
       <HowItWorksSection />
+      <div className="border-t border-zinc-800/50" />
       <OneEconomySection />
       <CtaSection />
       <Footer />

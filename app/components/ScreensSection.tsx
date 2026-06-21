@@ -6,17 +6,8 @@ import { SCREENS } from "../data/content";
 
 export default function ScreensSection() {
   return (
-    <section id="screens" className="py-24 border-y border-zinc-800/50">
+    <section id="screens" className="pt-20 pb-24">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="mb-20 text-center">
-          <h2 className="text-3xl font-bold text-white sm:text-4xl">
-            Purpose-built screens
-          </h2>
-          <p className="mt-4 text-zinc-400 max-w-lg mx-auto">
-            Everything in one place, from first conversation to advanced
-            scheduling and memory.
-          </p>
-        </div>
         <div className="flex flex-col gap-24">
           {SCREENS.map((s, i) => {
             const isEven = i % 2 === 0;

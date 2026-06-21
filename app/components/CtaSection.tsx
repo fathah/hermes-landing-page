@@ -23,22 +23,6 @@ export default function CtaSection() {
           </p>
         </div>
       </section>
-
-      {/* Bottom CTA */}
-      <section className="relative overflow-hidden border-t border-zinc-800/50 py-24 text-center">
-        <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-          <div className="h-100 w-100 rounded-full bg-white/5 blur-3xl" />
-        </div>
-        <div className="relative z-10 mx-auto max-w-2xl px-6">
-          <h2 className="mb-4 text-4xl font-bold text-white">
-            Get Hermes Desktop
-          </h2>
-          <p className="mb-10 text-zinc-400">
-            Free, open source, and available for macOS, Windows, and Linux.
-          </p>
-          <DownloadSection />
-        </div>
-      </section>
     </>
   );
 }
