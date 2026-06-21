@@ -3,10 +3,14 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ScreensSection from "../components/ScreensSection";
 
+const description =
+  "A look at every Hermes One screen — chat, sessions, agents, memory, schedules, gateway, and more. Everything in one native app.";
+
 export const metadata: Metadata = {
-  title: "Preview - Hermes One",
-  description:
-    "A look at every Hermes One screen — chat, sessions, agents, memory, schedules, gateway, and more. Everything in one native app.",
+  title: "Preview",
+  description,
+  alternates: { canonical: "/preview" },
+  openGraph: { title: "Preview | Hermes One", description, url: "/preview" },
 };
 
 export default function PreviewPage() {

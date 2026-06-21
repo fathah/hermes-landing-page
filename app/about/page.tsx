@@ -3,10 +3,14 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { GITHUB_URL, DOCS_URL } from "../data/content";
 
+const description =
+  "Hermes One is an independent, open-source AI agent platform with deep memory, multi-platform messaging, and no model lock-in — powered by Nous Research's Hermes Agent.";
+
 export const metadata: Metadata = {
-  title: "About - Hermes One",
-  description:
-    "Hermes One is a self-improving, open-source AI agent platform with deep memory, multi-platform messaging, and no model lock-in. Built by Nous Research.",
+  title: "About",
+  description,
+  alternates: { canonical: "/about" },
+  openGraph: { title: "About | Hermes One", description, url: "/about" },
 };
 
 const VALUES = [

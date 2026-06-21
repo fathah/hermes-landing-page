@@ -22,6 +22,7 @@ import {
   KanbanSquare,
 } from "lucide-react";
 
+export const SITE_URL = "https://hermesone.org";
 export const GITHUB_URL = "https://github.com/fathah/hermes-desktop";
 export const RELEASES_URL =
   "https://github.com/fathah/hermes-desktop/releases/latest";

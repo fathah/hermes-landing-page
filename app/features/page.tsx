@@ -3,10 +3,14 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { FEATURES, DOCS_URL, RELEASES_URL } from "../data/content";
 
+const description =
+  "Everything Hermes One does: a closed learning loop, deep memory, multi-platform messaging, scheduled automations, model freedom, and 14 built-in toolsets.";
+
 export const metadata: Metadata = {
-  title: "Features - Hermes One",
-  description:
-    "Everything Hermes One does: a closed learning loop, deep memory, multi-platform messaging, scheduled automations, model freedom, and 14 built-in toolsets.",
+  title: "Features",
+  description,
+  alternates: { canonical: "/features" },
+  openGraph: { title: "Features | Hermes One", description, url: "/features" },
 };
 
 export default function FeaturesPage() {

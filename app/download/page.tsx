@@ -4,10 +4,14 @@ import Footer from "../components/Footer";
 import DownloadSection from "../components/DownloadSection";
 import { HOW_IT_WORKS, DOCS_URL, GITHUB_URL } from "../data/content";
 
+const description =
+  "Download Hermes One for macOS, Windows, and Linux. Free, open source, and MIT licensed. Pick your platform and get your agent running in minutes.";
+
 export const metadata: Metadata = {
-  title: "Download - Hermes One",
-  description:
-    "Download Hermes One for macOS, Windows, and Linux. Free, open source, and MIT licensed. Pick your platform and get your agent running in minutes.",
+  title: "Download",
+  description,
+  alternates: { canonical: "/download" },
+  openGraph: { title: "Download | Hermes One", description, url: "/download" },
 };
 
 const PLATFORMS = [

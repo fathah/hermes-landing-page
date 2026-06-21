@@ -2,12 +2,15 @@ import type { Metadata } from "next";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import OneEconomySection from "../components/OneEconomySection";
-import EconomyLottie from "../components/EconomyLottie";
+
+const description =
+  "The Hermes One Economy is a community-maintained economy on the Base network, powered by the $HD token, enabling seamless transactions across all Hermes services.";
 
 export const metadata: Metadata = {
-  title: "Economy - Hermes One",
-  description:
-    "The Hermes One Economy is a community-maintained economy on the Base network, powered by the $HD token, enabling seamless transactions across all Hermes services.",
+  title: "Economy",
+  description,
+  alternates: { canonical: "/economy" },
+  openGraph: { title: "Economy | Hermes One", description, url: "/economy" },
 };
 
 const USES = [
