@@ -10,7 +10,7 @@ const footerLinks = {
     { label: "Download", href: "/download", external: false },
   ],
   resources: [
-    { label: "Documentation", href: DOCS_URL, external: true },
+    { label: "Documentation", href: DOCS_URL, external: false },
     { label: "GitHub", href: GITHUB_URL, external: true },
     { label: "Releases", href: RELEASES_URL, external: true },
     { label: "Changelog", href: `${GITHUB_URL}/releases`, external: true },

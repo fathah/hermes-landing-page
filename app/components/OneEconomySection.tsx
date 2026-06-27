@@ -29,10 +29,10 @@ export default function OneEconomySection() {
             The economy that powers autonomous agents.
           </h2>
           <p className="mt-4 text-zinc-400 max-w-2xl mx-auto">
-            Hermes powers its agent ecosystem with a community maintained
+            Hermes One powers its agent ecosystem with a community maintained
             economy on the Base network, powered by{" "}
             <strong className="text-white">$HD</strong> - enabling seamless
-            token transactions across all Hermes services.
+            token transactions across all Hermes One services.
           </p>
         </div>
 
@@ -69,7 +69,7 @@ export default function OneEconomySection() {
             </div>
             <h3 className="mb-2 text-sm font-semibold text-white">$HD Token</h3>
             <p className="text-sm text-zinc-500 leading-relaxed">
-              The community-driven token supporting the broader Hermes
+              The community-driven token supporting the broader Hermes One
               ecosystem, governance, and community initiatives.
             </p>
           </div>

@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Star } from "lucide-react";
-import { GITHUB_URL, DOCS_URL } from "../data/content";
+import { GITHUB_URL } from "../data/content";
 import { getStarCount } from "../lib/release";
 
 function formatStars(n: number): string {
@@ -64,14 +64,14 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <a
-            href={DOCS_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={navLinkClass(false)}
+          <Link
+            href="/docs"
+            className={navLinkClass(
+              pathname === "/docs" || pathname.startsWith("/docs/"),
+            )}
           >
             Docs
-          </a>
+          </Link>
           <a
             href={GITHUB_URL}
             target="_blank"

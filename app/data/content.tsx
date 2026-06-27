@@ -26,7 +26,7 @@ export const SITE_URL = "https://hermesone.org";
 export const GITHUB_URL = "https://github.com/fathah/hermes-desktop";
 export const RELEASES_URL =
   "https://github.com/fathah/hermes-desktop/releases/latest";
-export const DOCS_URL = "https://hermes-agent.nousresearch.com/docs/";
+export const DOCS_URL = "/docs";
 
 export const FEATURES = [
   {
