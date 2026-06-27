@@ -27,6 +27,7 @@ export const GITHUB_URL = "https://github.com/fathah/hermes-desktop";
 export const RELEASES_URL =
   "https://github.com/fathah/hermes-desktop/releases/latest";
 export const DOCS_URL = "/docs";
+export const REGISTRY_URL = "https://registry.hermesone.org";
 
 export const FEATURES = [
   {
