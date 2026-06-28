@@ -9,7 +9,9 @@ export async function getLatestRelease(): Promise<{
   try {
     const res = await fetch(
       `https://api.github.com/repos/${REPO}/releases/latest`,
-      { cache: "no-store" },
+      // Fetched at build time and baked into the static export. Rebuild the
+      // site (e.g. via a release-triggered CI build) to refresh this.
+      { cache: "force-cache" },
     );
     if (!res.ok) throw new Error("fetch failed");
     const data = await res.json();
@@ -24,7 +26,8 @@ export async function getLatestRelease(): Promise<{
 export async function getStarCount(): Promise<number | null> {
   try {
     const res = await fetch(`https://api.github.com/repos/${REPO}`, {
-      cache: "no-store",
+      // Fetched at build time and baked into the static export.
+      cache: "force-cache",
     });
     if (!res.ok) throw new Error("fetch failed");
     const data = await res.json();
