@@ -168,17 +168,31 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-8 flex flex-col items-center justify-between gap-4 text-xs text-zinc-600 sm:flex-row">
           <p>&copy; {year} Hermes One - Open source under the MIT license.</p>
-          <p className="flex items-center gap-1.5">
-            Built by
+          <div className="flex items-center gap-5">
             <a
-              href="https://hermesone.org"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-zinc-400 underline underline-offset-2 hover:text-white transition-colors"
+              href="/terms"
+              className="text-zinc-500 transition-colors hover:text-white"
             >
-              Hermes One
+              Terms
             </a>
-          </p>
+            <a
+              href="/privacy"
+              className="text-zinc-500 transition-colors hover:text-white"
+            >
+              Privacy
+            </a>
+            <p className="flex items-center gap-1.5">
+              Built by
+              <a
+                href="https://hermesone.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-zinc-400 underline underline-offset-2 hover:text-white transition-colors"
+              >
+                Hermes One
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
