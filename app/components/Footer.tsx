@@ -6,7 +6,6 @@ const footerLinks = {
     { label: "Features", href: "/features", external: false },
     { label: "Preview", href: "/preview", external: false },
     { label: "How It Works", href: "/#how-it-works", external: false },
-    { label: "Hermes One Economy", href: "/economy", external: false },
     { label: "Download", href: "/download", external: false },
   ],
   resources: [

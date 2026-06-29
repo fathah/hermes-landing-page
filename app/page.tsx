@@ -14,7 +14,7 @@ export default function Home() {
       <FeaturesSection />
       <HowItWorksSection />
       <div className="border-t border-zinc-800/50" />
-      <OneEconomySection />
+      {/* <OneEconomySection /> */}
       <CtaSection />
       <Footer />
     </div>

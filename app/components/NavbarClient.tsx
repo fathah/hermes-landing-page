@@ -30,7 +30,6 @@ const navLinks = [
   { label: "Features", href: "/features" },
   { label: "About", href: "/about" },
   { label: "Preview", href: "/preview" },
-  { label: "Economy", href: "/economy" },
 ];
 
 export default function NavbarClient({ stars }: { stars: number | null }) {
