@@ -22,7 +22,7 @@ const footerLinks = {
   community: [
     {
       label: "Discord",
-      href: "https://discord.gg/HAxktyvy",
+      href: "https://discord.gg/HtZNeyJjJ",
       external: true,
     },
     {
@@ -89,7 +89,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://discord.gg/HAxktyvy"
+                href="https://discord.gg/HtZNeyJjJ"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-9 w-9 items-center justify-center rounded-lg border border-zinc-800 bg-zinc-900/60 text-zinc-500 transition-colors hover:border-zinc-600 hover:text-white"

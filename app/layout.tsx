@@ -141,7 +141,7 @@ export default function RootLayout({
             sameAs: [
               GITHUB_URL,
               "https://x.com/HermesOneApp",
-              "https://discord.gg/HAxktyvy",
+              "https://discord.gg/HtZNeyJjJ",
             ],
           }),
         }}
