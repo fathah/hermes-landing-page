@@ -360,7 +360,7 @@ export default function PrivacyPage() {
                   Open a GitHub issue
                 </a>
                 <a
-                  href="https://discord.gg/HAxktyvy"
+                  href="https://discord.gg/HtZNeyJjJ"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center rounded-lg border border-zinc-700 px-5 py-2.5 text-sm font-semibold text-zinc-300 transition-colors hover:border-zinc-500 hover:text-white"
