@@ -71,7 +71,7 @@ export function buildDownloadOptions(version: string, tag: string) {
     {
       os: "linux" as const,
       label: "Linux",
-      url: `${base}/hermes-desktop-${v}.AppImage`,
+      url: `${base}/hermes-desktop-${v}-x86_64.AppImage`,
       ext: ".AppImage",
     },
     {
